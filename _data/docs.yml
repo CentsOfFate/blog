@@ -1,0 +1,9 @@
+- title: Practical T-SQL
+  docs:
+  - getting-started-tsql
+  - basics-tsql
+
+- title: Practical Tableau
+  docs:
+  - getting-started-tableau
+  - basics-tableau

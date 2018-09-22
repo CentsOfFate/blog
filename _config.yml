@@ -5,7 +5,7 @@ description: >
   Jekyll Template for Project Websites
   providing documentation and blog post pages.
 
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: https://centsoffate.github.io/blog/ # the base hostname & protocol for your site
 git_address: https://github.com/centsoffate/blog
 git_edit_address: https://github.com/centsoffate/blog

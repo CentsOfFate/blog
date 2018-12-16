@@ -7,11 +7,11 @@ Data visualization is one of the most important aspects to data analysis. Plotti
 
 The Matplotlib library is one of the mainstays in Python. The depth of options it has is nearly endless. However, the default graphs leave much to be desired:
 
-![ss1](/omega/assets/post 1/basic.png)
+![ss1](/blog/assets/post 1/basic.png)
 
 One of Python’s newer libraries, Seaborn, can turn our above graph from uninspiring to impressive.
 
-![ss2](/omega/assets/post 1/Graph5.png)
+![ss2](/blog/assets/post 1/Graph5.png)
 
 Seaborn is a Python library built on top of matplotlib. The library is designed to streamline the process of making graphs. Even right out of the box, Seaborn makes your run of the mill matplotlib plots look a lot better. Combining the customization of matplotlib and the design of Seaborn, you will have the ability to make stunning graphs.
 
@@ -61,7 +61,7 @@ ax = sns.barplot(x = "Champion", y = "Number of Matches Picked",
 
 **sns.barplot** is what we use to graph our bar graph. We select our X-Axis and Y-Axis based on our columns from our dataframe. **data = df** means that Seaborn knows to use the columns from our dataframe. We will touch on **palette** in a little bit. So let’s take a look at our graph!
 
-![ss3](/omega/assets/post 1/Graph1.png)
+![ss3](/blog/assets/post 1/Graph1.png)
 
 It’s already looking a lot better! There’s still a lot more we can add to it before we can call it good. Next, we should add Titles.
 
@@ -72,7 +72,7 @@ plt.xlabel('Champion', size = 20, fontweight = 'bold')
 plt.ylabel('Number of Matches Picked', size = 20, fontweight = 'bold')
 {% endhighlight %}
 
-![ss4](/omega/assets/post 1/Graph2.png)
+![ss4](/blog/assets/post 1/Graph2.png)
 
 
 We have big bold titles now! But, our text seems a bit off, and our graph seems unusually plain. Seaborn has the ability to add what is called a Style. With just one line of code:
@@ -82,7 +82,7 @@ We have big bold titles now! But, our text seems a bit off, and our graph seems 
 sns.set_style('whitegrid')
 {% endhighlight %}
 
-![ss4](/omega/assets/post 1/Graph3.png)
+![ss4](/blog/assets/post 1/Graph3.png)
 
 We can get Y-Axis grid lines in the background of the page. Also, whitegrid gave us some better looking font for our titles too. We just have a couple more adjustments to go. Next, let’s make our X-Axis and Y-Axis text bigger and change our Y-Axis Range.
 
@@ -96,7 +96,7 @@ plt.yticks(size = 18)
 plt.ylim(0, 120)
 {% endhighlight %}
 
-![ss4](/omega/assets/post 1/Graph4.png)
+![ss4](/blog/assets/post 1/Graph4.png)
 
 We are almost there. The last part is to put Data Labels above each bar. Here is how you do that in a single line:
 
@@ -110,7 +110,7 @@ plt.yticks(size = 18)
 [ax.text(p[0] - .13, p[1] + 2, p[1], color = 'black', fontsize = 18) for p in zip(ax.get_xticks(), df['Number of Matches Picked'])]
 {% endhighlight %}
 
-![ss4](/omega/assets/post 1/Graph5.png)
+![ss4](/blog/assets/post 1/Graph5.png)
 
 For this last portion, we run a For Loop for all of the **df[‘Number of Matches Picked’]** values and write text based on the X-Axis and Y-Axis Position.
 
@@ -179,7 +179,7 @@ df = pd.DataFrame({'Academic_Year' : ['2013-2014', '2014-2015', '2015-2016', '20
  plt.show()
 {% endhighlight %}
 
-![ss6](/omega/assets/post 1/LineGraph.png)
+![ss6](/blog/assets/post 1/LineGraph.png)
 
 Using a lot of the same functions from the Bar Graph example, we can create line graphs that are simple to read and understand. This line graph shows State Level proficiency on the Smarter Balanced Assessment for English Language Arts and Math (fake data).
 
@@ -243,7 +243,7 @@ fig.suptitle("2017 North American LCS Kills Boxplots",
 plt.show()
 {% endhighlight %}
 
-![ss6](/omega/assets/post 1/Box.png)
+![ss6](/blog/assets/post 1/Box.png)
 
 Using the 2017 North American League of Legends Championship Series data, we can plot Box Plots of player stats for each match. The Box Plots shown above are Kills Per Match for Mid-Lane (Left) and AD Carry (Right).
 
@@ -291,7 +291,7 @@ Using the base stats of Pokemon, we can create a Linear Regression. Just like th
 fig, ax = plt.subplots(ncols = 2, nrows = 2, figsize = (20, 15), dpi = 100)
 {% endhighlight %}
 
-![ss6](/omega/assets/post 1/Quad Lin Reg.png)
+![ss6](/blog/assets/post 1/Quad Lin Reg.png)
 
 We also use a For Loop for everything except plt.suptitle. We create two lists to loop through variables in order to plot and format our Linear Regression plots.
 
@@ -350,7 +350,7 @@ For the last example, we show a Distribution Plot for the 2016 MLB Season for Hi
 plt.xticks(np.arange(0, 275, 25))
 {% endhighlight %}
 
-![ss6](/omega/assets/post 1/Distplot.png)
+![ss6](/blog/assets/post 1/Distplot.png)
 
 We can arrange the the X-Axis so it’s ticks are being measured at 25.
 

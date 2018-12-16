@@ -1,9 +1,4 @@
-- title: Practical T-SQL
+- title: Projects
   docs:
-  - getting-started-tsql
-  - basics-tsql
+  - bread-basket
 
-- title: Practical Tableau
-  docs:
-  - getting-started-tableau
-  - basics-tableau

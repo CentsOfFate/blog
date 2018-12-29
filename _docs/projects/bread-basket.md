@@ -5,10 +5,10 @@ permalink: /docs/bread-basket/
 
 This is a dataset I downloaded from Kaggle a while back. I have tried to find it again to link to the page, but it may have been taken down or been removed. This dataset features 4 columns:
 
-**Date**
-**Time**
-**Transaction**
-**Item**
+* **Date**
+* **Time**
+* **Transaction**
+* **Item**
 
 In total, there are 20000+ rows in the file. There's enough here to do some quick and dirty analysis. So the first thing I do is load this dataset into SQL Server and prep Jupyter Notebooks to make some visualizations to see how this data lays out. The first query I run and visualize is the Top 10 Items Sold at the Bakery.
 
@@ -131,5 +131,5 @@ Most transactions take place around the noon/lunch hour. There is a large drop o
 
 To finish up my project, I took all the graphs I made with Seaborn/Matplotlib and put them all into Tableau Dashboards. Those dashboards can be found by clicking on this link:
 
-https://public.tableau.com/shared/C52R6J7N4?:display_count=yes
+[Bread Basket Market Analysis Dashboard](https://public.tableau.com/shared/C52R6J7N4?:display_count=yes)
 
